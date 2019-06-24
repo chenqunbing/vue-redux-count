@@ -10,12 +10,11 @@ export default (state = initState, actions) => {
                 count: count+1
             }
         }
-        case 'reduce':{
+        case 'reduce':
             return {
                 count: count-1
             }
-        }
         default:
-            return count
+            return state
     }
 }

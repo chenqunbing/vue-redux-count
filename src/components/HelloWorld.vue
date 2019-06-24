@@ -18,9 +18,7 @@ export default {
   },
   created() {
     this.unsubscribe = store.subscribe(() => {
-      console.log(store)
         let data = store.getState();
-        console.log('data',data);
         this.count = data.count
     });
   },
